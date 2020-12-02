@@ -1,0 +1,179 @@
+Start pairing
+
+::Create request public key payload
+
+Send with response -- Message Ready || m_out_message_length 6
+0x0100030027a7
+COUNT: 0
+m_out_message_length: (>0?) 6 
+m_out_message_progress: (==0?) 0 
+::::::WRITING TO NUKI::::::
+Wrote to Nuki and nuki responded fast
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 0 (==) m_expected_response_length 36 
+COUNT: 1
+NUKI SENT MESSAGE: <{ Own public key }>: m_out_message_length: (>0?) 0 
+m_out_message_progress: (==0?) 0 
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 36 (==) m_expected_response_length 36 
+------>?????????<>>>>>>:::::::::::::::::::::::message_inside_buffer: 36 SEND_COMMAND_BOOL 00x03002fe57da347cd62431528daac5fbb290730fff684afc4cfc2ed90995f58cb3b749db9
+ ~~~~~~ ~~~~~~ ~~~~~~~ ~~~~~~~ (public_key_received length ) lenght: 0 
+0x
+Received public key from smartlock
+
+::(getting ready to generate keys)
+THIS IS VERY IMPORTANT : 
+0x2fe57da347cd62431528daac5fbb290730fff684afc4cfc2ed90995f58cb3b74
+ ~~~~~~ ~~~~~~ ~~~~~~~ (SeND BUFFER length ) lenght: 36 
+0x0300f88127ccf48023b5cbe9101d24baa8a368da94e8c2e3cde2ded29ce96ab50c159241
+
+Send with response -- Message Ready || m_out_message_length 36
+0x0300f88127ccf48023b5cbe9101d24baa8a368da94e8c2e3cde2ded29ce96ab50c159241
+COUNT: 2
+m_out_message_length: (>0?) 36 
+m_out_message_progress: (==0?) 0 
+::::::WRITING TO NUKI::::::
+Wrote to Nuki and nuki responded fast
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 0 (==) m_expected_response_length 36 
+COUNT: 3
+NUKI SENT MESSAGE: <{ Challenge for authorization authenticator }> m_out_message_length: (>0?) 0 
+m_out_message_progress: (==0?) 0 
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 36 (==) m_expected_response_length 36 
+------>?????????<>>>>>>:::::::::::::::::::::::message_inside_buffer: 36 SEND_COMMAND_BOOL 00x04006cd4163d159050c798553eaa57e278a579affcbc56f09fc57fe879e51c42df17c3df
+
+Received challenge for authorization authenticator received
+
+
+
+
+
+
+
+
+
+ IMPORTANT MAYDAY 
+
+
+
+
+ Create autorization authenticator payload
+Send with response -- Message Ready || m_out_message_length 36
+0x0500b09a0d3979a029e5fd027b519eaa200bc14ad3e163d3be4563843e021073bcb1c357
+COUNT: 4
+m_out_message_length: (>0?) 36 
+m_out_message_progress: (==0?) 0 
+::::::WRITING TO NUKI::::::
+Wrote to Nuki and nuki responded fast
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 0 (==) m_expected_response_length 36 
+COUNT: 5
+NUKI SENT MESSAGE: <{ Challenge for authorization data }> m_out_message_length: (>0?) 0 
+m_out_message_progress: (==0?) 0 
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 36 (==) m_expected_response_length 36 
+------>?????????<>>>>>>:::::::::::::::::::::::message_inside_buffer: 36 SEND_COMMAND_BOOL 00x0400e0742cfea39cb46109385bf91286a3c02f40ee86b0b62fc34033094de41e2c0d7fe1
+
+Received challenge for authorization data
+
+create authorization data payload
+
+
+randombytes called!!!
+
+
+
+randombytes called!!!
+
+
+Send with response -- Message Ready || m_out_message_length 105
+0x06000fe1011b92c645d907969016f065935d38f826efd00eedd946200ed2501c92ca027f7ac65f4f70656e204e756b6920466f62203546433637413746202020202020202020007f7ac65f7f7ac65f7f7ac65f7f7ac65f7f7ac65f7f7ac65f7f7ac65f7f7ac65f46d3
+COUNT: 6
+m_out_message_length: (>0?) 105 
+m_out_message_progress: (==0?) 0 
+::::::WRITING TO NUKI::::::
+Wrote to Nuki and nuki responded fast
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 0 (==) m_expected_response_length 88 
+COUNT: 7
+NUKI SENT MESSAGE: <{ Authorization id received }> m_out_message_length: (>0?) 0 
+m_out_message_progress: (==0?) 0 
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 88 (==) m_expected_response_length 88 
+------>?????????<>>>>>>:::::::::::::::::::::::message_inside_buffer: 88 SEND_COMMAND_BOOL 00x07003a270a2e453443c3790e657cebe634b03f0102f45681b40671d46e6e1f0c5edf02000000083b33643c6d97ef77ed51c02a277cbf7ea479915982f13c61d997a56678ad77791bfa7e95229a3dd34f87132bf3e3c97db9
+ ~~~~~~ ~~~~~~ ~~~~~~~ ~~~~~~~ (auth_id_received length ) lenght: 0 
+0x
+
+Received authorization ID
+
+Send with response -- Message Ready || m_out_message_length 40
+0x1e00ac0e23e8e44e5b12c48baed210267c73c1db8a05bff381ba14f31a8e85a0b288020000004e24
+COUNT: 8
+m_out_message_length: (>0?) 40 
+m_out_message_progress: (==0?) 0 
+::::::WRITING TO NUKI::::::
+Wrote to Nuki and nuki responded fast
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 0 (==) m_expected_response_length 5 
+COUNT: 9
+NUKI SENT MESSAGE: <{ Authorization id received }> m_out_message_length: (>0?) 0 
+m_out_message_progress: (==0?) 0 
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 5 (==) m_expected_response_length 5 
+------>?????????<>>>>>>:::::::::::::::::::::::message_inside_buffer: 5 SEND_COMMAND_BOOL 00x0e00009dd7
+Pairing complete
+
+
+
+
+
+
+
+
+Pairing finished - Simulate an unlock now:
+Press enter to continue protocol
+lets go
+
+randombytes called!!!
+
+0x0200000001000400e804
+0x807ac65f807ac65f807ac65f807ac65f807ac65f807ac65f020000001a00729336ec36ee96068ace68effb1e7ba467a40023cc2a6ed615d6
+(SEND BUFFER FACTER create_challenge_payload (bool 1)) lenght: 56 
+0x807ac65f807ac65f807ac65f807ac65f807ac65f807ac65f020000001a00729336ec36ee96068ace68effb1e7ba467a40023cc2a6ed615d6
+
+Send with response -- Message Ready || m_out_message_length 56
+0x807ac65f807ac65f807ac65f807ac65f807ac65f807ac65f020000001a00729336ec36ee96068ace68effb1e7ba467a40023cc2a6ed615d6
+NUKI SENT MESSAGE: <{ Challenge for lock action }> m_out_message_length: (>0?) 56 
+m_out_message_progress: (==0?) 0 
+::::::WRITING TO NUKI::::::
+Wrote to Nuki and nuki responded fast
+m_expected_response_length: (>0?) 0 
+ m_response_message_progress 86 (==) m_expected_response_length 86 
+------>?????????<>>>>>>:::::::::::::::::::::::message_inside_buffer: 86 SEND_COMMAND_BOOL 10x99c8613a9f6ab6d3fb0399d37ad38c5c003ac139b1567bc102000000380028cdc8c08da47bf323bf9371ebf068f6d480438563660780a4234d9a23794e305ee37878874ede106a0bbfcf5b60e0c2e2ba17248a020b00
+THIS IS REALLY IMPORTANT : 
+0x99c8613a9f6ab6d3fb0399d37ad38c5c003ac139b1567bc102000000380028cdc8c08da47bf323bf9371ebf068f6d480438563660780a4234d9a23794e305ee37878874ede106a0bbfcf5b60e0c2e2ba17248a020b00
+THIS IS REALLY IMPORTANT : 
+0x99c8613a9f6ab6d3fb0399d37ad38c5c003ac139b1567bc102000000380028cdc8c08da47bf323bf9371ebf068f6d480438563660780a4234d9a23794e305ee37878874ede106a0bbfcf5b60e0c2e2ba17248a020b00
+(send_buffer payload) lenght: 0 
+0x
+
+
+
+
+
+
+
+
+
+THIS IS THE CHALLENGE (size 0 )------------------------>
+0x
+-------------------------------------------------------------------> SHIT Size related <------------------------------------------------- > size then is ... : 56 -- > should be    ... : 56 0x217fcb0f18caf284e9bdea0b94b83b8d10867ed706bfdedbd2381f4cb3b8f730
+0x28cdc8c08da47bf323bf9371ebf068f6d480438563660780a4234d9a23794e305ee37878874ede106a0bbfcf5b60e0c2e2ba17248a020b00
+(
+
+RESULT OF CHALLENGE DECRYPTION) 
+false0x
+
+Send with response -- Message Ready || m_out_message_length 0
+0x
